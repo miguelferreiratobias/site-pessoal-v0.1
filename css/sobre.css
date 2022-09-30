@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-image: url(../image/gradiente-fundo.png);
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-position-y: top;
+}
+
+header {    
+    padding: .4rem;
+    border-bottom: #000 ;
+    
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem 6rem;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin-top: .9rem;
+    padding: 0.3rem 0;
+    height: 3rem;
+           
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+.nav-list ul ul{
+    display: none;
+}
+
+.nav-list ul li:hover>ul{
+    display: block;
+}
+
+.nav-list ul ul ul{
+    margin-left: 4rem;
+    top: 0px;
+    position: absolute;
+}
+
+.nav-item {
+    margin: 0;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    width: auto;
+    height: 40px;
+    text-align: center;
+    line-height: 2rem;
+    top: 0;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.9rem;
+    color: #121212;
+    text-shadow: 1px .5px 3px #202020;
+    font-weight: 500;
+        
+}
+
+.logo-image{
+    margin-right: 2rem;
+    height: 4.2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #121212;
+    font-size: 2.8rem;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 1px .5px 3px #202020;
+    
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.sobre-container {
+    display: flex;
+    height: fit-content;
+    margin-left: 7rem;
+}
+
+.coluna-esquerda{
+    margin: 10rem 0 10rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #121212;
+    max-width: 60vw;
+}
+
+.coluna-esquerda h1{
+    font-style: italic;
+    font-size: 4rem;
+    text-shadow: 2px 1px 0px #e5e5e0;
+}
+
+.coluna-esquerda p{
+    font-size: 1.9rem;
+    text-align: justify;
+}
+
+.coluna-direita{
+    margin: 7rem 0 7rem 7rem;
+}
+
+.sobre-imagem{
+    padding: 2rem;
+    width: 70%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .nav-bar {
+        padding: 0.2rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    
+    .logo-image{
+        margin: 0 1rem;
+        height: 3.1rem;
+    }
+        
+    .logo h1 {
+        color: #121212;
+        font-size: 1.8rem;
+        font-style: italic;
+        font-weight: bold;
+        text-shadow: .5px .25px 1.5px #202020;
+        
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        padding: 1rem 0rem;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 0.8rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    
+    .open {
+        display: block;
+    }
+  
+    .sobre-container {
+        display: block;
+        height: fit-content;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .coluna-esquerda{
+        margin: 5rem 0 5rem 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #121212;
+        max-width: 80vw;
+    }
+
+    .coluna-esquerda h1{
+        font-style: italic;
+        font-size: 4rem;
+        text-shadow: 2px 1px 0px #e5e5e0;
+        text-align: center;
+    }
+
+    .coluna-esquerda p{
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .coluna-direita{
+        margin: 1rem 7rem 0 7rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-imagem{
+        padding: 1rem;
+        width: max-content;
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #000;
+}
